@@ -13,7 +13,7 @@ function Footer() {
                 {footerSection}
             </div>
             <div className="footer-bottom">
-                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
                 Coded by <a href="https://www.linkedin.com/in/gianluca-pili-8a49b916b/">Gianluca Pili</a> with React.
             </div>
         </div>
