@@ -1,0 +1,12 @@
+.header {
+    // background: linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%),
+    //             url('../images/bg-pattern-intro-desktop.svg');
+    background: url("../images/bg-pattern-intro-desktop.svg") no-repeat, 
+        linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 80%);
+    background-size: 200%;
+    background-position: 30% 50%;
+    border-bottom-left-radius: 120px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}

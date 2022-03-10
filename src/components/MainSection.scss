@@ -1,0 +1,92 @@
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Overpass-Variable';
+    overflow: hidden;
+    padding: 14% 0;
+    h2.title {
+        text-align: center;
+        font-size: 40px;
+        color: var(--title-color);
+        padding-bottom: 5%;
+    }
+    .sub-section {
+        display: flex;
+        flex-direction: row;
+        max-width: 1400px;
+
+        &-content {
+            width: 50%;
+            padding: 0 50px;
+            &-text {
+                h3 {
+                    color: var(--title-color);
+                }
+                p.content {
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        &-cover {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+        }
+    }
+    #illustration {
+        .sub-section-cover {
+            background: url('../images/illustration-editor-desktop.svg') no-repeat center/95%;
+            top: 5%;
+            left: 60%;
+        }
+    }
+    #computer {
+        flex-direction: row-reverse;
+
+        .sub-section-content {
+            padding-top: 2%;
+        }
+        .sub-section-cover {
+            background: url('../images/illustration-laptop-desktop.svg') no-repeat center/95%;
+            top: -2%;
+            right: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section {
+        text-align: center;
+        .sub-section {
+            flex-direction: column-reverse;
+            align-items: center;
+            height: 1000px;
+            &-content {
+                width: 100%;
+            }
+            &-cover {
+                position: static;
+                width: 80%;
+                height: 100%;
+            }
+        }
+        #illustration {
+            .sub-section-cover{
+                top: 0;
+                left: 0;
+                background: url('../images/illustration-editor-mobile.svg') no-repeat center/100%;
+            }
+        }
+        #computer {
+            flex-direction: column-reverse;
+            .sub-section-cover {
+                top: 0;
+                left: 0;
+                background: url('../images/illustration-laptop-mobile.svg') no-repeat center/120%;
+            }
+        }
+    }
+}

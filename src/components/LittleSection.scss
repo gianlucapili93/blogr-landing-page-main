@@ -1,0 +1,112 @@
+.little-section {
+    display: flex;
+    align-items: center;
+    background: url("../images/bg-pattern-circles.svg") no-repeat, 
+        linear-gradient(90deg, hsl(237, 17%, 21%) 0%, hsl(237, 23%, 32%) 80%);
+    background-position: -20% 100%;
+    color: white;
+    font-family: 'Overpass-Regular';
+    height: 43vh;
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 120px;
+
+    &-illustration {
+        position: relative;
+        top: 10px;
+        padding-left: 8%;
+        width: 40%;
+        max-width: 740px;
+    }
+    &-content {
+        margin-left: 10%;
+        &-title {
+            font-size: 38px;
+            font-weight: 400;
+            padding-bottom: 30px;
+        }
+        &-paragraph {
+            font-family: 'Overpass-Variable';
+            font-size: 15px;
+            max-width: 500px;
+            line-height: 1.8em;
+            font-variation-settings: 'wght' 50;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --top: -30%;
+    }
+    .little-section {
+        flex-direction: column;
+        text-align: center;
+        height: 65vh;
+        background-position: bottom;
+        background-size: 140%;
+        margin-top: 10%;
+        
+        &-illustration {
+            width: 70%;
+            top: var(--top);
+        }
+        &-content {
+            position: relative;
+            top: var(--top);
+            margin-left: 0px;
+            padding: 0 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    :root {
+        --top: -25%;
+    }
+    .little-section {
+        height: 60vh;
+        &-illustration {
+            width: 70%;
+            top: var(--top);
+        }
+        &-content {
+            top: var(--top);
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    :root {
+        --top: -30%;
+    }
+    .little-section {
+        height: 60vh;
+        margin-top: 15%;
+        background-position: 50% 150%;
+        &-illustration {
+            width: 80%;
+            top: var(--top);
+        }
+        &-content {
+            top: var(--top);
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    :root {
+        --top: -30%;
+    }
+    .little-section {
+        height: 60vh;        
+        margin-top: 15%;
+        background-position: 50% 250%;
+        &-illustration {
+            width: 80%;
+            top: var(--top);
+        }
+        &-content {
+            top: var(--top);
+        }
+    }
+}

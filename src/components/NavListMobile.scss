@@ -1,0 +1,10 @@
+:root {
+    --color-text: hsl(207, 13%, 34%);
+}
+.nav-list-mobile {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text);
+    cursor: pointer;
+}

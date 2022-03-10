@@ -1,0 +1,46 @@
+:root {
+    --bg-color: rgba(239,239,241,255);
+    --color-text: hsl(207, 13%, 34%);
+}
+
+.nav-dropdown-mobile {
+    font-family: 'Ubuntu-Regular';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-head {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        .nav-dropdown-head-mobile-text {
+            padding-right: 6px;
+            &.active {
+                color: var(--color-text);
+            }
+        }
+        img {
+            transition: all 0.3s;
+            &.active {
+                transition: all 0.3s;
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &-body {
+        transition: width 0.5s;
+        margin: 10px;
+        padding: 10px;
+        background-color: var(--bg-color);
+        border-radius: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

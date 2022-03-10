@@ -1,0 +1,51 @@
+:root {
+    --text: white;
+    --text-dark: black;
+    --bg: white;
+    --light-red: hsl(356, 100%, 66%);
+    --very-light-red: hsl(355, 100%, 74%);
+}
+
+a.btn {
+    font-family: 'Ubuntu-Regular';
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text);
+    max-height: 51px;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 10px;
+    opacity: 0.6;
+    border-radius: 100px;
+
+    &.solid {
+        background-color: white;
+        color: var(--light-red);
+        opacity: 1;
+
+        &:hover {
+            background-color: var(--very-light-red);
+            color: var(--text);
+        }
+    }
+
+    &.light {
+        border: solid 1px white;
+        opacity: 1;
+
+        &:hover {
+            background-color: var(--bg);
+            color: var(--light-red);
+        }
+    }
+
+    &.dark {
+        color: var(--text-dark);
+        opacity: 1;
+    }
+    &.colour {
+        background-color: var(--very-light-red);
+        color: var(--text);
+        opacity: 1;
+    }
+}
